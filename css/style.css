@@ -427,3 +427,9 @@ img.animated.pulse {
     padding-right: 0;
     border-right: none;
 }
+.logo{
+    width: 30px
+}
+.navlogo{
+    width: 50px
+}
