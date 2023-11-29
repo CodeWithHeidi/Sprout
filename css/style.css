@@ -469,3 +469,10 @@ img.animated.pulse {
 .carousel-item div { 
     height: 100%; 
 } 
+.testimonial-item {
+    color: #fff; /* Set text color to white */
+  }
+
+  .stars {
+    color: #ffffff; /* Primary color for stars */
+  }

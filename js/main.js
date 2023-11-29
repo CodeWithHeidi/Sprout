@@ -121,3 +121,8 @@ window.onload = function () {
         } 
     }, 1500); 
 };
+$(document).ready(function() {
+    $('#thumbsUpButton').click(function() {
+      $(this).toggleClass('btn-outline-primary btn-success');
+    });
+  });
