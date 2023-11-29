@@ -11,8 +11,6 @@
     };
     spinner();
     
-    
-    // Initiate the wowjs
     new WOW().init();
 
 
@@ -123,6 +121,6 @@ window.onload = function () {
 };
 $(document).ready(function() {
     $('#thumbsUpButton').click(function() {
-      $(this).toggleClass('btn-outline-primary btn-success');
+      $(this).toggleClass('btn-outline-primary btn-success thumbs');
     });
   });
