@@ -94,43 +94,45 @@
                 <h1 class="text-primary mb-3"><span class="fw-light text-dark">Our Natural</span> Shampoos</h1>
                 <p class="mb-5">Our different shampoos result in different hair types. Each one is available in several different colors so your new do is fully customized to you!</p>
             </div>
-            <!-- Deal Start -->
-     <div class="container-fluid deal bg-primary my-5 py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <img class="img-fluid animated pulse infinite" src="img/base/IMG_6065.png">
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white text-center p-4">
-                        <div class="border p-4">
-                            <p class="mb-2"></p>
-                            <h2 class="fw-bold text-uppercase mb-4">Limited time Offer</h2>
-                            <h1 class="display-4 text-primary mb-4">$24.99</h1>
-                            <h5>Pompadour Growing Shampoo</h5>
-                            <p class="mb-4">The Pompadour Growing Shampoo is your ticket to effortlessly cool hair. Cleanse, style, and grow the confidence and charisma of a true trendsetter. Get it now before it's gone!</p>
-                            <div class="row g-0 cdt mb-4">
-                                <div class="col-3">
-                                    <h1 class="display-6" id="cdt-days"></h1>
-                                </div>
-                                <div class="col-3">
-                                    <h1 class="display-6" id="cdt-hours"></h1>
-                                </div>
-                                <div class="col-3">
-                                    <h1 class="display-6" id="cdt-minutes"></h1>
-                                </div>
-                                <div class="col-3">
-                                    <h1 class="display-6" id="cdt-seconds"></h1>
-                                </div>
+
+ <!-- Deal Start -->
+<div class="container-fluid deal2 bg-primary my-5 py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <img class="img-fluid animated pulse infinite" src="img/base/IMG_6065.png">
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="bg-white text-center p-4">
+                    <div class="border p-4">
+                        <p class="mb-2"></p>
+                        <h2 class="fw-bold text-uppercase mb-4">Limited time Offer</h2>
+                        <h1 class="display-4 text-primary mb-4">$24.99</h1>
+                        <h5>Pompadour Growing Shampoo</h5>
+                        <p class="mb-4">The Pompadour Growing Shampoo is your ticket to effortlessly cool hair. Cleanse, style, and grow the confidence and charisma of a true trendsetter. Get it now before it's gone!</p>
+                        <div class="row g-0 cdt mb-4">
+                            <div class="col-3">
+                                <h1 class="display-6" id="cdt-days"></h1>
                             </div>
-                            <a class="btn btn-primary py-2 px-4" href="order.html">Shop Now</a>
+                            <div class="col-3">
+                                <h1 class="display-6" id="cdt-hours"></h1>
+                            </div>
+                            <div class="col-3">
+                                <h1 class="display-6" id="cdt-minutes"></h1>
+                            </div>
+                            <div class="col-3">
+                                <h1 class="display-6" id="cdt-seconds"></h1>
+                            </div>
                         </div>
+                        <a class="btn btn-primary py-2 px-4" href="">Add to Cart <i class="bi bi-cart-plus-fill"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Deal End -->
+</div>
+<!-- Deal End -->
+
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
                     <div class="product-item text-center border h-100 p-4">
@@ -146,25 +148,14 @@
                         <a href="" class="h6 d-inline-block mb-2">Straight Hair Shampoo</a><br>
                         <div class="mb-2">
                             <small class="text-primary"><i class="bi bi-heart-fill"></i> Popular</small>
-                        </div class="mb-2">
+                        </div>
                         <h5 class="text-primary mb-3">$19.99</h5>
-                        <!--Color menu-->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle btn btn-outline-primary px-3" type="button" data-bs-toggle="dropdown">
-                                Color
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Black</a></li>
-                                <li><a class="dropdown-item" href="#">Blonde</a></li>
-                                <li><a class="dropdown-item" href="#">Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Light Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Red</a></li>
-                                <li><a class="dropdown-item" href="#">Orange</a></li>
-                                <li><a class="dropdown-item" href="#">Yellow</a></li>
-                                <li><a class="dropdown-item" href="#">Green</a></li>
-                                <li><a class="dropdown-item" href="#">Blue</a></li>
-                                <li><a class="dropdown-item" href="#">Purple</a></li>
-                            </ul>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- Color menu -->
+                            <div class="dropdown" id="colorMenuContainer1"></div>
+                            <a href="" class="btn btn-outline-primary px-3 ms-1 cart-button">
+                                <i class="bi bi-cart-plus-fill"></i>
+                            </a>                            
                         </div>
                     </div>
                 </div>
@@ -183,23 +174,12 @@
                         <a href="" class="h6 d-inline-block mb-2">Wavy Hair Shampoo<br>Type 2A
                         </a>
                         <h5 class="text-primary mb-3">$19.99</h5>
-                        <!--Color menu-->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle btn btn-outline-primary px-3" type="button" data-bs-toggle="dropdown">
-                                Color
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Black</a></li>
-                                <li><a class="dropdown-item" href="#">Blonde</a></li>
-                                <li><a class="dropdown-item" href="#">Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Light Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Red</a></li>
-                                <li><a class="dropdown-item" href="#">Orange</a></li>
-                                <li><a class="dropdown-item" href="#">Yellow</a></li>
-                                <li><a class="dropdown-item" href="#">Green</a></li>
-                                <li><a class="dropdown-item" href="#">Blue</a></li>
-                                <li><a class="dropdown-item" href="#">Purple</a></li>
-                            </ul>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- Color menu -->
+                            <div class="dropdown" id="colorMenuContainer2"></div>
+                            <a href="" class="btn btn-outline-primary px-3 ms-1 cart-button">
+                                <i class="bi bi-cart-plus-fill"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -217,23 +197,12 @@
                         </div>
                         <a href="" class="h6 d-inline-block mb-2">Wavy Hair Shampoo<br>Type 2B</a>
                         <h5 class="text-primary mb-3">$19.99</h5>
-                        <!--Color menu-->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle btn btn-outline-primary px-3" type="button" data-bs-toggle="dropdown">
-                                Color
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Black</a></li>
-                                <li><a class="dropdown-item" href="#">Blonde</a></li>
-                                <li><a class="dropdown-item" href="#">Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Light Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Red</a></li>
-                                <li><a class="dropdown-item" href="#">Orange</a></li>
-                                <li><a class="dropdown-item" href="#">Yellow</a></li>
-                                <li><a class="dropdown-item" href="#">Green</a></li>
-                                <li><a class="dropdown-item" href="#">Blue</a></li>
-                                <li><a class="dropdown-item" href="#">Purple</a></li>
-                            </ul>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- Color menu -->
+                            <div class="dropdown" id="colorMenuContainer3"></div>
+                            <a href="" class="btn btn-outline-primary px-3 ms-1 cart-button">
+                                <i class="bi bi-cart-plus-fill"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -251,23 +220,12 @@
                         </div>
                         <a href="" class="h6 d-inline-block mb-2">Wavy Hair Shampoo<br>Type 2C</a>
                         <h5 class="text-primary mb-3">$19.99</h5>
-                        <!--Color menu-->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle btn btn-outline-primary px-3" type="button" data-bs-toggle="dropdown">
-                                Color
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Black</a></li>
-                                <li><a class="dropdown-item" href="#">Blonde</a></li>
-                                <li><a class="dropdown-item" href="#">Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Light Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Red</a></li>
-                                <li><a class="dropdown-item" href="#">Orange</a></li>
-                                <li><a class="dropdown-item" href="#">Yellow</a></li>
-                                <li><a class="dropdown-item" href="#">Green</a></li>
-                                <li><a class="dropdown-item" href="#">Blue</a></li>
-                                <li><a class="dropdown-item" href="#">Purple</a></li>
-                            </ul>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- Color menu -->
+                            <div class="dropdown" id="colorMenuContainer4"></div>
+                            <a href="" class="btn btn-outline-primary px-3 ms-1 cart-button">
+                                <i class="bi bi-cart-plus-fill"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -285,23 +243,12 @@
                         </div>
                         <a href="" class="h6 d-inline-block mb-2">Curly Hair Shampoo<br>Type 3A</a>
                         <h5 class="text-primary mb-3">$19.99</h5>
-                        <!--Color menu-->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle btn btn-outline-primary px-3" type="button" data-bs-toggle="dropdown">
-                                Color
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Black</a></li>
-                                <li><a class="dropdown-item" href="#">Blonde</a></li>
-                                <li><a class="dropdown-item" href="#">Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Light Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Red</a></li>
-                                <li><a class="dropdown-item" href="#">Orange</a></li>
-                                <li><a class="dropdown-item" href="#">Yellow</a></li>
-                                <li><a class="dropdown-item" href="#">Green</a></li>
-                                <li><a class="dropdown-item" href="#">Blue</a></li>
-                                <li><a class="dropdown-item" href="#">Purple</a></li>
-                            </ul>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- Color menu -->
+                            <div class="dropdown" id="colorMenuContainer5"></div>
+                            <a href="" class="btn btn-outline-primary px-3 ms-1 cart-button">
+                                <i class="bi bi-cart-plus-fill"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -319,23 +266,12 @@
                         </div>
                         <a href="" class="h6 d-inline-block mb-2">Curly Hair Shampoo<br>Type 3B</a>
                         <h5 class="text-primary mb-3">$19.99</h5>
-                        <!--Color menu-->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle btn btn-outline-primary px-3" type="button" data-bs-toggle="dropdown">
-                                Color
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Black</a></li>
-                                <li><a class="dropdown-item" href="#">Blonde</a></li>
-                                <li><a class="dropdown-item" href="#">Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Light Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Red</a></li>
-                                <li><a class="dropdown-item" href="#">Orange</a></li>
-                                <li><a class="dropdown-item" href="#">Yellow</a></li>
-                                <li><a class="dropdown-item" href="#">Green</a></li>
-                                <li><a class="dropdown-item" href="#">Blue</a></li>
-                                <li><a class="dropdown-item" href="#">Purple</a></li>
-                            </ul>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- Color menu -->
+                            <div class="dropdown" id="colorMenuContainer6"></div>
+                            <a href="" class="btn btn-outline-primary px-3 ms-1 cart-button">
+                                <i class="bi bi-cart-plus-fill"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -352,26 +288,16 @@
                         </div>
                         <a href="" class="h6 d-inline-block mb-2">Curly Hair Shampoo<br>Type 3C</a>
                         <h5 class="text-primary mb-3">$19.99</h5>
-                        <!--Color menu-->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle btn btn-outline-primary px-3" type="button" data-bs-toggle="dropdown">
-                                Color
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Black</a></li>
-                                <li><a class="dropdown-item" href="#">Blonde</a></li>
-                                <li><a class="dropdown-item" href="#">Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Light Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Red</a></li>
-                                <li><a class="dropdown-item" href="#">Orange</a></li>
-                                <li><a class="dropdown-item" href="#">Yellow</a></li>
-                                <li><a class="dropdown-item" href="#">Green</a></li>
-                                <li><a class="dropdown-item" href="#">Blue</a></li>
-                                <li><a class="dropdown-item" href="#">Purple</a></li>
-                            </ul>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- Color menu -->
+                            <div class="dropdown" id="colorMenuContainer7"></div>
+                            <a href="" class="btn btn-outline-primary px-3 ms-1 cart-button">
+                                <i class="bi bi-cart-plus-fill"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+            
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                     <div class="product-item text-center border h-100 p-4">
                         <img class="img-fluid mb-4" src="img/base/IMG_6065.png" alt="">
@@ -385,26 +311,16 @@
                         </div>
                         <a href="" class="h6 d-inline-block mb-2">Coily Hair Shampoo<br>Type 4A</a>
                         <h5 class="text-primary mb-3">$19.99</h5>
-                        <!--Color menu-->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle btn btn-outline-primary px-3" type="button" data-bs-toggle="dropdown">
-                                Color
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Black</a></li>
-                                <li><a class="dropdown-item" href="#">Blonde</a></li>
-                                <li><a class="dropdown-item" href="#">Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Light Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Red</a></li>
-                                <li><a class="dropdown-item" href="#">Orange</a></li>
-                                <li><a class="dropdown-item" href="#">Yellow</a></li>
-                                <li><a class="dropdown-item" href="#">Green</a></li>
-                                <li><a class="dropdown-item" href="#">Blue</a></li>
-                                <li><a class="dropdown-item" href="#">Purple</a></li>
-                            </ul>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- Color menu -->
+                            <div class="dropdown" id="colorMenuContainer8"></div>
+                            <a href="" class="btn btn-outline-primary px-3 ms-1 cart-button">
+                                <i class="bi bi-cart-plus-fill"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="product-item text-center border h-100 p-4">
                         <img class="img-fluid mb-4" src="img/base/IMG_6065.png" alt="">
@@ -418,26 +334,16 @@
                         </div>
                         <a href="" class="h6 d-inline-block mb-2">Coily Hair Shampoo<br>Type 4B</a>
                         <h5 class="text-primary mb-3">$19.99</h5>
-                        <!--Color menu-->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle btn btn-outline-primary px-3" type="button" data-bs-toggle="dropdown">
-                                Color
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Black</a></li>
-                                <li><a class="dropdown-item" href="#">Blonde</a></li>
-                                <li><a class="dropdown-item" href="#">Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Light Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Red</a></li>
-                                <li><a class="dropdown-item" href="#">Orange</a></li>
-                                <li><a class="dropdown-item" href="#">Yellow</a></li>
-                                <li><a class="dropdown-item" href="#">Green</a></li>
-                                <li><a class="dropdown-item" href="#">Blue</a></li>
-                                <li><a class="dropdown-item" href="#">Purple</a></li>
-                            </ul>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- Color menu -->
+                            <div class="dropdown" id="colorMenuContainer9"></div>
+                            <a href="" class="btn btn-outline-primary px-3 ms-1 cart-button">
+                                <i class="bi bi-cart-plus-fill"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="product-item text-center border h-100 p-4">
                         <img class="img-fluid mb-4" src="img/base/IMG_6065.png" alt="">
@@ -454,26 +360,16 @@
                             <small class="text-primary"><i class="bi bi-heart-fill"></i> Popular</small>
                         </div class="mb-2">
                         <h5 class="text-primary mb-3">$19.99</h5>
-                        <!--Color menu-->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle btn btn-outline-primary px-3" type="button" data-bs-toggle="dropdown">
-                                Color
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Black</a></li>
-                                <li><a class="dropdown-item" href="#">Blonde</a></li>
-                                <li><a class="dropdown-item" href="#">Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Light Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Red</a></li>
-                                <li><a class="dropdown-item" href="#">Orange</a></li>
-                                <li><a class="dropdown-item" href="#">Yellow</a></li>
-                                <li><a class="dropdown-item" href="#">Green</a></li>
-                                <li><a class="dropdown-item" href="#">Blue</a></li>
-                                <li><a class="dropdown-item" href="#">Purple</a></li>
-                            </ul>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- Color menu -->
+                            <div class="dropdown" id="colorMenuContainer10"></div>
+                            <a href="" class="btn btn-outline-primary px-3 ms-1 cart-button">
+                                <i class="bi bi-cart-plus-fill"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="product-item text-center border h-100 p-4">
                         <img class="img-fluid mb-4" src="img/base/IMG_6065.png" alt="">
@@ -490,26 +386,16 @@
                             <small class="text-primary"><i class="bi bi-heart-fill"></i> Popular</small>
                         </div class="mb-2">
                         <h5 class="text-primary mb-3">$24.99</h5>
-                        <!--Color menu-->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle btn btn-outline-primary px-3" type="button" data-bs-toggle="dropdown">
-                                Color
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Black</a></li>
-                                <li><a class="dropdown-item" href="#">Blonde</a></li>
-                                <li><a class="dropdown-item" href="#">Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Light Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Red</a></li>
-                                <li><a class="dropdown-item" href="#">Orange</a></li>
-                                <li><a class="dropdown-item" href="#">Yellow</a></li>
-                                <li><a class="dropdown-item" href="#">Green</a></li>
-                                <li><a class="dropdown-item" href="#">Blue</a></li>
-                                <li><a class="dropdown-item" href="#">Purple</a></li>
-                            </ul>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- Color menu -->
+                            <div class="dropdown" id="colorMenuContainer11"></div>
+                            <a href="" class="btn btn-outline-primary px-3 ms-1 cart-button">
+                                <i class="bi bi-cart-plus-fill"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="product-item text-center border h-100 p-4">
                         <img class="img-fluid mb-4" src="img/base/IMG_6065.png" alt="">
@@ -526,23 +412,12 @@
                             <small class="text-primary"><i class="bi bi-heart-fill"></i> Popular</small>
                         </div class="mb-2">
                         <h5 class="text-primary mb-3">$24.99</h5>
-                        <!--Color menu-->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle btn btn-outline-primary px-3" type="button" data-bs-toggle="dropdown">
-                                Color
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Black</a></li>
-                                <li><a class="dropdown-item" href="#">Blonde</a></li>
-                                <li><a class="dropdown-item" href="#">Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Light Brown</a></li>
-                                <li><a class="dropdown-item" href="#">Red</a></li>
-                                <li><a class="dropdown-item" href="#">Orange</a></li>
-                                <li><a class="dropdown-item" href="#">Yellow</a></li>
-                                <li><a class="dropdown-item" href="#">Green</a></li>
-                                <li><a class="dropdown-item" href="#">Blue</a></li>
-                                <li><a class="dropdown-item" href="#">Purple</a></li>
-                            </ul>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- Color menu -->
+                            <div class="dropdown" id="colorMenuContainer12"></div>
+                            <a href="" class="btn btn-outline-primary px-3 ms-1 cart-button">
+                                <i class="bi bi-cart-plus-fill"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -553,8 +428,6 @@
         </div>
     </div>
     <!-- Product End -->
-
-    
 
     <!-- Footer Start -->
     <div class="container-fluid newsletter bg-primary py-5 my-5 footer">
@@ -606,5 +479,4 @@
     <!--  Javascript -->
     <script src="js/main.js"></script>
 </body>
-
 </html>

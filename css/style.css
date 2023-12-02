@@ -208,6 +208,42 @@ img.animated.pulse {
     text-transform: capitalize;
 }
 
+/* Deal 2 */
+.deal2 {
+    position: relative;
+    background: url(../img/bg.png) center center no-repeat;
+    background-size: cover;
+    padding-top: 5rem; /* Adjust the top padding as needed */
+    padding-bottom: 4rem; /* Adjust the bottom padding as needed */
+}
+
+.deal2::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .1);
+    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+}
+
+.deal2 .bg-white {
+    position: relative;
+    z-index: 1;
+    margin-top: -3rem; /* Adjust the top margin as needed */
+    margin-bottom: -3rem; /* Adjust the bottom margin as needed */
+}
+
+.deal2 .cdt span {
+    display: block;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 200;
+    text-transform: capitalize;
+    margin-bottom: 2rem; /* Adjust the bottom margin as needed */
+}
+
 
 /*** How To Use ***/
 .how-to-use {
@@ -383,10 +419,12 @@ img.animated.pulse {
     color: var(--bs-body);
     font-weight: normal;
     transition: .3s;
+    color: #1C2900;
 }
 
 .footer .btn.btn-link:hover {
     color: var(--bs-primary);
+    color: #1C2900;
 }
 
 .footer .btn.btn-link::before {
@@ -475,4 +513,16 @@ img.animated.pulse {
   .stars {
     color: rgb(252, 255, 71); /* Primary color for stars */
   }
-.thumbs{}
+/* Custom styles for the cart button */
+.cart-button {
+    fill: #90BC79 !important; /* Icon color */
+}
+
+.cart-button:hover {
+    background-color: #90BC79 !important; /* Hover background color */
+}
+
+.cart-button:hover i {
+    fill: #1C2900 !important; /* Hover icon color */
+}
+

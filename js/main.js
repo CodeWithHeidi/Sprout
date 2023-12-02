@@ -124,3 +124,84 @@ $(document).ready(function() {
       $(this).toggleClass('btn-outline-primary btn-success thumbs');
     });
   });
+
+
+// Reusable Color Menu Function
+function generateColorMenu(containerId) {
+    const colors = [
+        { name: 'Black', color: '#000000' },
+        { name: 'Blonde', color: '#e5e500' },
+        { name: 'Brown', color: '#8B4513' },
+        { name: 'Light Brown', color: '#D2B48C' },
+        { name: 'Red', color: '#FF0000' },
+        { name: 'Orange', color: '#FFA500' },
+        { name: 'Yellow', color: '#FFFF00' },
+        { name: 'Green', color: '#008000' },
+        { name: 'Blue', color: '#0000FF' },
+        { name: 'Purple', color: '#800080' },
+    ];
+
+    const container = document.getElementById(containerId);
+
+    // Create a wrapper div with Bootstrap flex classes
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('d-flex', 'justify-content-center', 'align-items-center');
+
+    // Create the color menu button with dropdown
+    const colorDropdown = document.createElement('div');
+    colorDropdown.classList.add('dropdown');
+
+    const colorButton = document.createElement('button');
+    colorButton.classList.add('btn', 'btn-outline-primary', 'px-3', 'dropdown-toggle');
+    colorButton.type = 'button';
+    colorButton.setAttribute('data-bs-toggle', 'dropdown');
+    colorButton.innerText = 'Color';
+
+    const colorMenu = document.createElement('ul');
+    colorMenu.classList.add('dropdown-menu');
+
+    colors.forEach(color => {
+        const colorItem = document.createElement('li');
+        const colorLink = document.createElement('a');
+        colorLink.classList.add('dropdown-item');
+        colorLink.href = '#';
+
+        // Add a colored icon to the left of the text
+        const icon = document.createElement('span');
+        icon.style.width = '12px';
+        icon.style.height = '12px';
+        icon.style.borderRadius = '50%';
+        icon.style.display = 'inline-block';
+        icon.style.marginRight = '8px';
+        icon.style.backgroundColor = color.color;
+
+        colorLink.appendChild(icon);
+        colorLink.innerHTML += color.name;
+
+        colorItem.appendChild(colorLink);
+        colorMenu.appendChild(colorItem);
+    });
+
+    colorDropdown.appendChild(colorButton);
+    colorDropdown.appendChild(colorMenu);
+
+    // Append the color menu with dropdown to the wrapper
+    wrapper.appendChild(colorDropdown);
+
+    // Append the wrapper to the container
+    container.appendChild(wrapper);
+}
+
+// Append the color menu with dropdown to the containers with unique IDs
+generateColorMenu('colorMenuContainer1');
+generateColorMenu('colorMenuContainer2');
+generateColorMenu('colorMenuContainer3');
+generateColorMenu('colorMenuContainer4');
+generateColorMenu('colorMenuContainer5');
+generateColorMenu('colorMenuContainer6');
+generateColorMenu('colorMenuContainer7');
+generateColorMenu('colorMenuContainer8');
+generateColorMenu('colorMenuContainer9');
+generateColorMenu('colorMenuContainer10');
+generateColorMenu('colorMenuContainer11');
+generateColorMenu('colorMenuContainer12');
