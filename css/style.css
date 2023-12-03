@@ -72,19 +72,23 @@ img.animated.pulse {
     height: 85px;
 }
 
+/* Navbar */
 .navbar .navbar-nav .nav-link {
     margin-right: 45px;
     padding: 0;
-    color: var(--bs-dark);
+    color: black; /* Set default text color to black */
     font-weight: 500;
     transition: .5s;
     outline: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-white);
+    color: var(--bs-white) !important;
 }
+
+
 
 .navbar .dropdown-toggle::after {
     border: none;
@@ -133,7 +137,7 @@ img.animated.pulse {
     margin-top: -85px;
     padding-top: 12rem;
     padding-bottom: 6rem;
-    background: url(../img/bg.png) center center no-repeat;
+    background: url(../img/base/bg.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -180,7 +184,7 @@ img.animated.pulse {
 /*** Deal ***/
 .deal {
     position: relative;
-    background: url(../img/bg.png) center center no-repeat;
+    background: url(../img/base/bg.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -211,7 +215,7 @@ img.animated.pulse {
 /* Deal 2 */
 .deal2 {
     position: relative;
-    background: url(../img/bg.png) center center no-repeat;
+    background: url(../img/base/bg.png) center center no-repeat;
     background-size: cover;
     padding-top: 5rem; /* Adjust the top padding as needed */
     padding-bottom: 4rem; /* Adjust the bottom padding as needed */
@@ -248,7 +252,7 @@ img.animated.pulse {
 /*** How To Use ***/
 .how-to-use {
     position: relative;
-    background: url(../img/bg.png) center center no-repeat;
+    background: url(../img/base/bg.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -292,7 +296,7 @@ img.animated.pulse {
 /*** Testimonial ***/
 .testimonial {
     position: relative;
-    background: url(../img/bg.png) center center no-repeat;
+    background: url(../img/base/bg.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -380,90 +384,45 @@ img.animated.pulse {
     border-color: rgba(255, 255, 255, .2) !important;
     z-index: 1;
 }
+/*** Footer Styles ***/
+    .footer .btn.btn-link {
+        display: block;
+        padding: 0;
+        text-align: left;
+        color: #1C2900;
+        font-weight: normal;
+        transition: .3s;
+    }
 
+    .footer .btn.btn-link:hover {
+        color: #1C2900;
+    }
 
-/*** Newsletter ***/
-.newsletter {
-    position: relative;
-    background: url(../img/bg.png) center center no-repeat;
-    background-size: cover;
-}
+    .footer .btn.btn-link::before {
+        position: relative;
+        content: "\f105";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-right: 10px;
+    }
 
-.newsletter::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
+    .footer .btn.btn-link:hover {
+        letter-spacing: 1px;
+        box-shadow: none;
+    }
 
-.newsletter .container {
-    position: relative;
-    z-index: 1;
-}
+    .footer .footer-menu a {
+        margin-right: 15px;
+        padding-right: 15px;
+        border-right: 3px solid var(--bs-light);
+    }
 
-.newsletter .form-control {
-    background: rgba(255, 255, 255, .3);
-}
+    .footer .footer-menu a:last-child {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none;
+    }
 
-
-/*** Footer ***/
-.footer .btn.btn-link {
-    display: block;
-    margin-bottom: 10px;
-    padding: 0;
-    text-align: left;
-    color: var(--bs-body);
-    font-weight: normal;
-    transition: .3s;
-    color: #1C2900;
-}
-
-.footer .btn.btn-link:hover {
-    color: var(--bs-primary);
-    color: #1C2900;
-}
-
-.footer .btn.btn-link::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
-}
-
-.footer .btn.btn-link:hover {
-    letter-spacing: 1px;
-    box-shadow: none;
-}
-
-.footer .copyright {
-    padding: 25px 0;
-    border-top: 3px solid var(--bs-light);
-}
-
-.footer .copyright a {
-    color: var(--bs-body);
-}
-
-.footer .copyright a:hover {
-    color: var(--bs-primary);
-}
-
-.footer .footer-menu a {
-    margin-right: 15px;
-    padding-right: 15px;
-    border-right: 3px solid var(--bs-light);
-}
-
-.footer .footer-menu a:last-child {
-    margin-right: 0;
-    padding-right: 0;
-    border-right: none;
-}
 .logo{
     width: 30px
 }
@@ -519,10 +478,16 @@ img.animated.pulse {
 }
 
 .cart-button:hover {
-    background-color: #90BC79 !important; /* Hover background color */
+    background-color: #aec5a1 !important; /* Hover background color */
 }
 
 .cart-button:hover i {
     fill: #1C2900 !important; /* Hover icon color */
 }
-
+.jback{
+    background-color: #f5fff0;
+}
+.footer {
+        bottom: 0;
+        width: 100%;
+}
