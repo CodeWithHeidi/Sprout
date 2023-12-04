@@ -143,11 +143,9 @@ function generateColorMenu(containerId) {
 
     const container = document.getElementById(containerId);
 
-    // Create a wrapper div with Bootstrap flex classes
     const wrapper = document.createElement('div');
     wrapper.classList.add('d-flex', 'justify-content-center', 'align-items-center');
 
-    // Create the color menu button with dropdown
     const colorDropdown = document.createElement('div');
     colorDropdown.classList.add('dropdown');
 
@@ -166,7 +164,7 @@ function generateColorMenu(containerId) {
         colorLink.classList.add('dropdown-item');
         colorLink.href = '#';
 
-        // Add a colored icon to the left of the text
+        // colored icon to the left of text
         const icon = document.createElement('span');
         icon.style.width = '12px';
         icon.style.height = '12px';
@@ -185,14 +183,12 @@ function generateColorMenu(containerId) {
     colorDropdown.appendChild(colorButton);
     colorDropdown.appendChild(colorMenu);
 
-    // Append the color menu with dropdown to the wrapper
     wrapper.appendChild(colorDropdown);
 
-    // Append the wrapper to the container
     container.appendChild(wrapper);
 }
 
-// Append the color menu with dropdown to the containers with unique IDs
+//  unique IDs
 generateColorMenu('colorMenuContainer1');
 generateColorMenu('colorMenuContainer2');
 generateColorMenu('colorMenuContainer3');
@@ -205,3 +201,4 @@ generateColorMenu('colorMenuContainer9');
 generateColorMenu('colorMenuContainer10');
 generateColorMenu('colorMenuContainer11');
 generateColorMenu('colorMenuContainer12');
+generateColorMenu('colorMenuContainer13');
