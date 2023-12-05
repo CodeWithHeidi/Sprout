@@ -76,7 +76,7 @@ img.animated.pulse {
 .navbar .navbar-nav .nav-link {
     margin-right: 45px;
     padding: 0;
-    color: black; /* Set default text color to black */
+    color: black; 
     font-weight: 500;
     transition: .5s;
     outline: none;
@@ -217,8 +217,8 @@ img.animated.pulse {
     position: relative;
     background: url(../img/base/bg.png) center center no-repeat;
     background-size: cover;
-    padding-top: 5rem; /* Adjust the top padding as needed */
-    padding-bottom: 4rem; /* Adjust the bottom padding as needed */
+    padding-top: 5rem; 
+    padding-bottom: 4rem; 
 }
 
 .deal2::before {
@@ -235,8 +235,8 @@ img.animated.pulse {
 .deal2 .bg-white {
     position: relative;
     z-index: 1;
-    margin-top: -3rem; /* Adjust the top margin as needed */
-    margin-bottom: -3rem; /* Adjust the bottom margin as needed */
+    margin-top: -3rem; 
+    margin-bottom: -3rem; 
 }
 
 .deal2 .cdt span {
@@ -245,7 +245,7 @@ img.animated.pulse {
     font-style: italic;
     font-weight: 200;
     text-transform: capitalize;
-    margin-bottom: 2rem; /* Adjust the bottom margin as needed */
+    margin-bottom: 2rem; 
 }
 
 
@@ -466,23 +466,23 @@ img.animated.pulse {
     height: 100%; 
 } 
 .testimonial-item {
-    color: #fff; /* Set text color to white */
+    color: #fff; 
   }
 
   .stars {
-    color: rgb(252, 255, 71); /* Primary color for stars */
+    color: rgb(252, 255, 71); 
   }
-/* Custom styles for the cart button */
+/* cart button */
 .cart-button {
-    fill: #90BC79 !important; /* Icon color */
+    fill: #90BC79 !important; 
 }
 
 .cart-button:hover {
-    background-color: #aec5a1 !important; /* Hover background color */
+    background-color: #90BC79 !important; 
 }
 
 .cart-button:hover i {
-    fill: #1C2900 !important; /* Hover icon color */
+    fill: #1C2900 !important;
 }
 .jback{
     background-color: #f5fff0;
