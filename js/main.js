@@ -180,7 +180,7 @@ function generateColorMenu(containerId) {
 
        // Event listener for color selection
 colorLink.addEventListener('click', function () {
-    colorButton.innerHTML = ''; // Clear existing content
+    colorButton.innerHTML = ''; 
 
     if (color.color) {
         // colored icon to the left of text
@@ -195,11 +195,9 @@ colorLink.addEventListener('click', function () {
         colorButton.appendChild(icon);
     }
 
-    // Append color name to the button
+    // color name in button
     colorButton.innerHTML += color.name;
 });
-
-
         colorItem.appendChild(colorLink);
         colorMenu.appendChild(colorItem);
     });
