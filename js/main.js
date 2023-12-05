@@ -125,10 +125,10 @@ $(document).ready(function() {
     });
   });
 
-
 // Reusable Color Menu Function
 function generateColorMenu(containerId) {
     const colors = [
+        { name: 'Colorless' },
         { name: 'Black', color: '#000000' },
         { name: 'Blonde', color: '#e5e500' },
         { name: 'Brown', color: '#8B4513' },
@@ -164,6 +164,26 @@ function generateColorMenu(containerId) {
         colorLink.classList.add('dropdown-item');
         colorLink.href = '#';
 
+        if (color.color) {
+            // colored icon to the left of text
+            const icon = document.createElement('span');
+            icon.style.width = '12px';
+            icon.style.height = '12px';
+            icon.style.borderRadius = '50%';
+            icon.style.display = 'inline-block';
+            icon.style.marginRight = '8px';
+            icon.style.backgroundColor = color.color;
+
+            colorLink.appendChild(icon);
+        }
+
+        colorLink.innerHTML += color.name;
+
+       // Event listener for color selection
+colorLink.addEventListener('click', function () {
+    colorButton.innerHTML = ''; // Clear existing content
+
+    if (color.color) {
         // colored icon to the left of text
         const icon = document.createElement('span');
         icon.style.width = '12px';
@@ -173,8 +193,13 @@ function generateColorMenu(containerId) {
         icon.style.marginRight = '8px';
         icon.style.backgroundColor = color.color;
 
-        colorLink.appendChild(icon);
-        colorLink.innerHTML += color.name;
+        colorButton.appendChild(icon);
+    }
+
+    // Append color name to the button
+    colorButton.innerHTML += color.name;
+});
+
 
         colorItem.appendChild(colorLink);
         colorMenu.appendChild(colorItem);
@@ -187,8 +212,7 @@ function generateColorMenu(containerId) {
 
     container.appendChild(wrapper);
 }
-
-//  unique IDs
+// unique IDs
 generateColorMenu('colorMenuContainer1');
 generateColorMenu('colorMenuContainer2');
 generateColorMenu('colorMenuContainer3');
