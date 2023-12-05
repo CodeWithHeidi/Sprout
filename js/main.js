@@ -130,7 +130,7 @@ function generateColorMenu(containerId) {
     const colors = [
         { name: 'Colorless' },
         { name: 'Black', color: '#000000' },
-        { name: 'Blonde', color: '#e5e500' },
+        { name: 'Blonde', color: '#fbe7a1' },
         { name: 'Brown', color: '#8B4513' },
         { name: 'Light Brown', color: '#D2B48C' },
         { name: 'Red', color: '#FF0000' },

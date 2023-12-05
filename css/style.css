@@ -491,3 +491,10 @@ img.animated.pulse {
         bottom: 0;
         width: 100%;
 }
+.footer .row.g-7 {
+    justify-content: space-between;
+}
+
+.footer .col-lg-3 img {
+    max-height: 100%;
+}
