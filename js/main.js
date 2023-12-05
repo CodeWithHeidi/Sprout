@@ -162,7 +162,6 @@ function generateColorMenu(containerId) {
         const colorItem = document.createElement('li');
         const colorLink = document.createElement('a');
         colorLink.classList.add('dropdown-item');
-        colorLink.href = '#';
 
         if (color.color) {
             // colored icon to the left of text
