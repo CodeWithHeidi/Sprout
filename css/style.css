@@ -498,3 +498,6 @@ img.animated.pulse {
 .footer .col-lg-3 img {
     max-height: 100%;
 }
+.footerb{
+    background: url(../img/base/bg.png) center center no-repeat;
+}

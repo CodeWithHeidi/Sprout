@@ -121,7 +121,7 @@ window.onload = function () {
 };
 $(document).ready(function() {
     $('#thumbsUpButton').click(function() {
-      $(this).toggleClass('btn-outline-primary btn-success thumbs');
+      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-success thumbs');
     });
   });
 
@@ -134,8 +134,7 @@ function generateColorMenu(containerId) {
         { name: 'Brown', color: '#8B4513' },
         { name: 'Light Brown', color: '#D2B48C' },
         { name: 'Red', color: '#FF0000' },
-        { name: 'Orange', color: '#FFA500' },
-        { name: 'Yellow', color: '#FFFF00' },
+        { name: 'Copper', color: '#FFA500' },
         { name: 'Green', color: '#008000' },
         { name: 'Blue', color: '#0000FF' },
         { name: 'Purple', color: '#800080' },
