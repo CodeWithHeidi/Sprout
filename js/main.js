@@ -13,7 +13,6 @@
     
     new WOW().init();
 
-
     // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -120,130 +119,16 @@ window.onload = function () {
     }, 1500); 
 };
 $(document).ready(function() {
-    $('#thumbsUpButton').click(function() {
-      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-primary thumbs');
+    $('.thumbsUpButton').click(function() {
+        $(this).toggleClass('btn-outline-primary btn-fill-primary btn-primary thumbs');
     });
-  });
-  $(document).ready(function() {
-    $('#thumbsUpButton1').click(function() {
-      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-primary thumbs');
-    });
-  });
-  $(document).ready(function() {
-    $('#thumbsUpButton2').click(function() {
-      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-primary thumbs');
-    });
-  });
-  $(document).ready(function() {
-    $('#thumbsUpButton3').click(function() {
-      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-primary thumbs');
-    });
-  });
-  $(document).ready(function() {
-    $('#thumbsUpButton4').click(function() {
-      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-primary thumbs');
-    });
-  });
-  $(document).ready(function() {
-    $('#thumbsUpButton5').click(function() {
-      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-primary thumbs');
-    });
-  });
-
-// Reusable Color Menu Function
-function generateColorMenu(containerId) {
-    const colors = [
-        { name: 'Colorless' },
-        { name: 'Black', color: '#000000' },
-        { name: 'Blonde', color: '#fbe7a1' },
-        { name: 'Brown', color: '#8B4513' },
-        { name: 'Light Brown', color: '#D2B48C' },
-        { name: 'Red', color: '#FF0000' },
-        { name: 'Copper', color: '#FFA500' },
-        { name: 'Green', color: '#008000' },
-        { name: 'Blue', color: '#0000FF' },
-        { name: 'Purple', color: '#800080' },
-    ];
-
-    const container = document.getElementById(containerId);
-
-    const wrapper = document.createElement('div');
-    wrapper.classList.add('d-flex', 'justify-content-center', 'align-items-center');
-
-    const colorDropdown = document.createElement('div');
-    colorDropdown.classList.add('dropdown');
-
-    const colorButton = document.createElement('button');
-    colorButton.classList.add('btn', 'btn-outline-primary', 'px-3', 'dropdown-toggle');
-    colorButton.type = 'button';
-    colorButton.setAttribute('data-bs-toggle', 'dropdown');
-    colorButton.innerText = 'Color';
-
-    const colorMenu = document.createElement('ul');
-    colorMenu.classList.add('dropdown-menu');
-
-    colors.forEach(color => {
-        const colorItem = document.createElement('li');
-        const colorLink = document.createElement('a');
-        colorLink.classList.add('dropdown-item');
-
-        if (color.color) {
-            // colored icon to the left of text
-            const icon = document.createElement('span');
-            icon.style.width = '12px';
-            icon.style.height = '12px';
-            icon.style.borderRadius = '50%';
-            icon.style.display = 'inline-block';
-            icon.style.marginRight = '8px';
-            icon.style.backgroundColor = color.color;
-
-            colorLink.appendChild(icon);
-        }
-
-        colorLink.innerHTML += color.name;
-
-       // Event listener for color selection
-colorLink.addEventListener('click', function () {
-    colorButton.innerHTML = ''; 
-
-    if (color.color) {
-        // colored icon to the left of text
-        const icon = document.createElement('span');
-        icon.style.width = '12px';
-        icon.style.height = '12px';
-        icon.style.borderRadius = '50%';
-        icon.style.display = 'inline-block';
-        icon.style.marginRight = '8px';
-        icon.style.backgroundColor = color.color;
-
-        colorButton.appendChild(icon);
-    }
-
-    // color name in button
-    colorButton.innerHTML += color.name;
 });
-        colorItem.appendChild(colorLink);
-        colorMenu.appendChild(colorItem);
+$(document).ready(function() {
+    $('.thumbsUpButton').click(function() {
+
+        const likeCountElement = $(this).closest('.blog-item').find('.like-count');
+        const likeCount = parseInt(likeCountElement.text());
+        const updatedLikeCount = $(this).hasClass('btn-fill-primary') ? likeCount + 1 : likeCount - 1;
+        likeCountElement.text(updatedLikeCount );
     });
-
-    colorDropdown.appendChild(colorButton);
-    colorDropdown.appendChild(colorMenu);
-
-    wrapper.appendChild(colorDropdown);
-
-    container.appendChild(wrapper);
-}
-// unique IDs
-generateColorMenu('colorMenuContainer1');
-generateColorMenu('colorMenuContainer2');
-generateColorMenu('colorMenuContainer3');
-generateColorMenu('colorMenuContainer4');
-generateColorMenu('colorMenuContainer5');
-generateColorMenu('colorMenuContainer6');
-generateColorMenu('colorMenuContainer7');
-generateColorMenu('colorMenuContainer8');
-generateColorMenu('colorMenuContainer9');
-generateColorMenu('colorMenuContainer10');
-generateColorMenu('colorMenuContainer11');
-generateColorMenu('colorMenuContainer12');
-generateColorMenu('colorMenuContainer13');
+});
