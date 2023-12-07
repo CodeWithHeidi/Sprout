@@ -121,12 +121,32 @@ window.onload = function () {
 };
 $(document).ready(function() {
     $('#thumbsUpButton').click(function() {
-      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-success thumbs');
+      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-primary thumbs');
     });
   });
   $(document).ready(function() {
     $('#thumbsUpButton1').click(function() {
-      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-success thumbs');
+      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-primary thumbs');
+    });
+  });
+  $(document).ready(function() {
+    $('#thumbsUpButton2').click(function() {
+      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-primary thumbs');
+    });
+  });
+  $(document).ready(function() {
+    $('#thumbsUpButton3').click(function() {
+      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-primary thumbs');
+    });
+  });
+  $(document).ready(function() {
+    $('#thumbsUpButton4').click(function() {
+      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-primary thumbs');
+    });
+  });
+  $(document).ready(function() {
+    $('#thumbsUpButton5').click(function() {
+      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-primary thumbs');
     });
   });
 
