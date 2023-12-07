@@ -2,10 +2,16 @@ https://codewithheidi.github.io/Sprout/ Sprout
 
 (tentative) to do list 
 
-▫️ fix the footer in some way
+- fix the footer in some way
 
-▫️ add questions on the FAQs page 
+- Carousel indicators
 
-▫️ make product images
+- Leaf cursor
 
-▫️ cart page 😰
+- add questions on the FAQs page 
+
+- make product images
+
+- cart page 😰
+
+- shift products (optional)
