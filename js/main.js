@@ -124,6 +124,11 @@ $(document).ready(function() {
       $(this).toggleClass('btn-outline-primary btn-fill-primary btn-success thumbs');
     });
   });
+  $(document).ready(function() {
+    $('#thumbsUpButton1').click(function() {
+      $(this).toggleClass('btn-outline-primary btn-fill-primary btn-success thumbs');
+    });
+  });
 
 // Reusable Color Menu Function
 function generateColorMenu(containerId) {
