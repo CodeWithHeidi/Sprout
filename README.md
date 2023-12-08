@@ -2,11 +2,7 @@ https://codewithheidi.github.io/Sprout/ Sprout
 
 (tentative) to do list 
 
-- fix the footer in some way
-
-- Carousel indicators
-
-- Leaf cursor
+- animated pandas in the footer?
 
 - add questions on the FAQs page 
 
@@ -15,3 +11,5 @@ https://codewithheidi.github.io/Sprout/ Sprout
 - cart page 😰
 
 - shift products (optional)
+
+- fa cart-plus icon not working on product 2a

@@ -39,7 +39,7 @@
 
     // Countdown Timer
     function countDownTimer() {	
-        var endTime = new Date("31 December 2023 10:00:00 GMT+00:00");
+        var endTime = new Date("31 December 2023 11:59:59 GMT-18:00");
         endTime = (Date.parse(endTime) / 1000);
 
         var now = new Date();
@@ -85,7 +85,6 @@
         nav: false,
         dots: true,
         items: 1,
-        dotsData: true,
     });
     
 })(jQuery);
