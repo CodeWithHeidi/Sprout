@@ -2,9 +2,7 @@ https://codewithheidi.github.io/Sprout/ Sprout
 
 (tentative) to do list 
 
-- fix the footer in some way
-
-- make product images
+WE ARE ALMOST DONE RAAAAAAAAAAAAAAAAAAAAAAAAAAH
 
 - cart 😰
 
