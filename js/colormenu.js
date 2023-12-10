@@ -5,7 +5,6 @@ function generateColorMenu(containerId) {
         { name: 'Black', color: '#000000' },
         { name: 'Blonde', color: '#fbe7a1' },
         { name: 'Brown', color: '#8B4513' },
-        { name: 'Light Brown', color: '#D2B48C' },
         { name: 'Red', color: '#FF0000' },
         { name: 'Copper', color: '#FFA500' },
         { name: 'Green', color: '#008000' },
@@ -54,130 +53,130 @@ function generateColorMenu(containerId) {
 colorLink.addEventListener('click', function () {
     if (containerId === 'colorMenuContainer1') {
         if (color.name === 'Colorless') {
-            document.getElementById('productImage1').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage1').src = 'img/products/straight/basestraight.png';
         }
         if (color.name === 'Black') {
-            document.getElementById('productImage1').src = 'img/base/baaafro.png';
+            document.getElementById('productImage1').src = 'img/products/straight/blackstraight.png';
         }
         if (color.name === 'Blonde') {
-            document.getElementById('productImage1').src = 'img/base/baatub.png';
+            document.getElementById('productImage1').src = 'img/products/straight/blondestraight.png';
         }
         if (color.name === 'Brown') {
-            document.getElementById('productImage1').src = 'img/base/oig.jpg';
+            document.getElementById('productImage1').src = 'img/products/straight/brownstraight.png';
         }
         if (color.name === 'Light Brown') {
-            document.getElementById('productImage1').src = 'img/base/red.png';
+            document.getElementById('productImage1').src = 'img/products/straight/blondestraight.png';
         }
         if (color.name === 'Red') {
-            document.getElementById('productImage1').src = 'img/base/crying.png';
+            document.getElementById('productImage1').src = 'img/products/straight/redstraight.png';
         }
         if (color.name === 'Copper') {
-            document.getElementById('productImage1').src = 'img/base/browncurls.png';
+            document.getElementById('productImage1').src = 'img/products/straight/orangestraight.png';
         }
         if (color.name === 'Green') {
-            document.getElementById('productImage1').src = 'img/base/blondebangs.jpg';
+            document.getElementById('productImage1').src = 'img/products/straight/greenstraight.png';
         }
         if (color.name === 'Blue') {
-            document.getElementById('productImage1').src = 'img/base/sleepypanda.jpg';
+            document.getElementById('productImage1').src = 'img/products/straight/bluestraight.png';
         }
         if (color.name === 'Purple') {
-            document.getElementById('productImage1').src = 'img/base/pompodeur.jpg';
-        }
+            document.getElementById('productImage1').src = 'img/products/straight/purplestraight.png';
     }
+}
     if (containerId === 'colorMenuContainer2') {
         if (color.name === 'Colorless') {
-            document.getElementById('productImage2').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage2').src = 'img/products/2s/2a/base.png';
         }
         if (color.name === 'Black') {
-            document.getElementById('productImage2').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage2').src = 'img/products/2s/2a/black.png';
         }
         if (color.name === 'Blonde') {
-            document.getElementById('productImage2').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage2').src = 'img/products/2s/2a/blonde.png';
         }
         if (color.name === 'Brown') {
-            document.getElementById('productImage2').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage2').src = 'img/products/2s/2a/brown.png';
         }
         if (color.name === 'Light Brown') {
             document.getElementById('productImage2').src = 'img/base/elvis.jpg';
         }
         if (color.name === 'Red') {
-            document.getElementById('productImage2').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage2').src = 'img/products/2s/2a/red.png';
         }
         if (color.name === 'Copper') {
-            document.getElementById('productImage2').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage2').src = 'img/products/2s/2a/orange.png';
         }
         if (color.name === 'Green') {
-            document.getElementById('productImage2').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage2').src = 'img/products/2s/2a/green.png';
         }
         if (color.name === 'Blue') {
-            document.getElementById('productImage2').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage2').src = 'img/products/2s/2a/blue.png';
         }
         if (color.name === 'Purple') {
-            document.getElementById('productImage2').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage2').src = 'img/products/2s/2a/purple.png';
         }
     }
     if (containerId === 'colorMenuContainer3') {
         if (color.name === 'Colorless') {
-            document.getElementById('productImage3').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage3').src = 'img/products/2s/2b/base.png';
         }
         if (color.name === 'Black') {
-            document.getElementById('productImage3').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage3').src = 'img/products/2s/2b/black.png';
         }
         if (color.name === 'Blonde') {
-            document.getElementById('productImage3').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage3').src = 'img/products/2s/2b/blonde.png';
         }
         if (color.name === 'Brown') {
-            document.getElementById('productImage3').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage3').src = 'img/products/2s/2b/brown.png';
         }
         if (color.name === 'Light Brown') {
-            document.getElementById('productImage3').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage3').src = 'img/products/2s/2b/.png';
         }
         if (color.name === 'Red') {
-            document.getElementById('productImage3').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage3').src = 'img/products/2s/2b/red.png';
         }
         if (color.name === 'Copper') {
-            document.getElementById('productImage3').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage3').src = 'img/products/2s/2b/orange.png';
         }
         if (color.name === 'Green') {
-            document.getElementById('productImage3').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage3').src = 'img/products/2s/2b/green.png';
         }
         if (color.name === 'Blue') {
-            document.getElementById('productImage3').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage3').src = 'img/products/2s/2b/blue.png';
         }
         if (color.name === 'Purple') {
-            document.getElementById('productImage3').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage3').src = 'img/products/2s/2b/purple.png';
         }
     }
     if (containerId === 'colorMenuContainer4') {
         if (color.name === 'Colorless') {
-            document.getElementById('productImage4').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage4').src = 'img/products/2s/2c/base.png';
         }
         if (color.name === 'Black') {
-            document.getElementById('productImage4').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage4').src = 'img/products/2s/2c/black.png';
         }
         if (color.name === 'Blonde') {
-            document.getElementById('productImage4').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage4').src = 'img/products/2s/2c/blonde.png';
         }
         if (color.name === 'Brown') {
-            document.getElementById('productImage4').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage4').src = 'img/products/2s/2c/brown.png';
         }
         if (color.name === 'Light Brown') {
-            document.getElementById('productImage4').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage4').src = 'img/products/2s/2c/.png';
         }
         if (color.name === 'Red') {
-            document.getElementById('productImage4').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage4').src = 'img/products/2s/2c/red.png';
         }
         if (color.name === 'Copper') {
-            document.getElementById('productImage4').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage4').src = 'img/products/2s/2c/orange.png';
         }
         if (color.name === 'Green') {
-            document.getElementById('productImage4').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage4').src = 'img/products/2s/2c/green.png';
         }
         if (color.name === 'Blue') {
-            document.getElementById('productImage4').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage4').src = 'img/products/2s/2c/blue.png';
         }
         if (color.name === 'Purple') {
-            document.getElementById('productImage4').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage4').src = 'img/products/2s/2c/purple.png';
         }
     }
     if (containerId === 'colorMenuContainer5') {
@@ -374,66 +373,98 @@ colorLink.addEventListener('click', function () {
     }
     if (containerId === 'colorMenuContainer11') {
         if (color.name === 'Colorless') {
-            document.getElementById('productImage11').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage11').src = "img/products/misc/mohawk/basemohawk.png";
         }
         if (color.name === 'Black') {
-            document.getElementById('productImage11').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage11').src = "img/products/misc/mohawk/black.png";
         }
         if (color.name === 'Blonde') {
-            document.getElementById('productImage11').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage11').src = "img/products/misc/mohawk/blonde.png";
         }
         if (color.name === 'Brown') {
-            document.getElementById('productImage11').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage11').src = "img/products/misc/mohawk/brown.png";
         }
         if (color.name === 'Light Brown') {
-            document.getElementById('productImage11').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage11').src = "img/products/misc/mohawk/.png";
         }
         if (color.name === 'Red') {
-            document.getElementById('productImage11').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage11').src = "img/products/misc/mohawk/red.png";
         }
         if (color.name === 'Copper') {
-            document.getElementById('productImage11').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage11').src = "img/products/misc/mohawk/orange.png";
         }
         if (color.name === 'Green') {
-            document.getElementById('productImage11').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage11').src = "img/products/misc/mohawk/green.png";
         }
         if (color.name === 'Blue') {
-            document.getElementById('productImage11').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage11').src = "img/products/misc/mohawk/blue.png";
         }
         if (color.name === 'Purple') {
-            document.getElementById('productImage11').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage11').src = "img/products/misc/mohawk/purple.png";
         }
     }
     if (containerId === 'colorMenuContainer12') {
         if (color.name === 'Colorless') {
-            document.getElementById('productImage12').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage12').src = 'img/products/bottiglie.jpg';
         }
         if (color.name === 'Black') {
-            document.getElementById('productImage12').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage12').src = "img/products/misc/mullet/black.png";
         }
         if (color.name === 'Blonde') {
-            document.getElementById('productImage12').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage12').src = "img/products/misc/mullet/blonde.png";
         }
         if (color.name === 'Brown') {
-            document.getElementById('productImage12').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage12').src = "img/products/misc/mullet/brown.png";
         }
         if (color.name === 'Light Brown') {
             document.getElementById('productImage12').src = 'img/base/elvis.jpg';
         }
         if (color.name === 'Red') {
-            document.getElementById('productImage12').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage12').src = "img/products/misc/mullet/red.png";
         }
         if (color.name === 'Copper') {
-            document.getElementById('productImage12').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage12').src = "img/products/misc/mullet/orange.png";
         }
         if (color.name === 'Green') {
-            document.getElementById('productImage12').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage12').src = "img/products/misc/mullet/green.png";
         }
         if (color.name === 'Blue') {
-            document.getElementById('productImage12').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage12').src = "img/products/misc/mullet/blue.png";
         }
         if (color.name === 'Purple') {
-            document.getElementById('productImage12').src = 'img/base/elvis.jpg';
+            document.getElementById('productImage12').src = "img/products/misc/mullet/purple.png";
+    }
+}
+    if (containerId === 'colorMenuContainer13') {
+        if (color.name === 'Colorless') {
+            document.getElementById('productImage13').src = 'img/products/misc/pomp/basepom.png';
+        }
+        if (color.name === 'Black') {
+            document.getElementById('productImage13').src = 'img/products/misc/pomp/blackpom.png';
+        }
+        if (color.name === 'Blonde') {
+            document.getElementById('productImage13').src = 'img/products/misc/pomp/blondepom.png';
+        }
+        if (color.name === 'Brown') {
+            document.getElementById('productImage13').src = 'img/products/misc/pomp/brownpom.png';
+        }
+        if (color.name === 'Light Brown') {
+            document.getElementById('productImage13').src = 'img/products/misc/pomp/bpom.png';
+        }
+        if (color.name === 'Red') {
+            document.getElementById('productImage13').src = 'img/products/misc/pomp/redpom.png';
+        }
+        if (color.name === 'Copper') {
+            document.getElementById('productImage13').src = 'img/products/misc/pomp/orangepom.png';
+        }
+        if (color.name === 'Green') {
+            document.getElementById('productImage13').src = 'img/products/misc/pomp/greenpom.png';
+        }
+        if (color.name === 'Blue') {
+            document.getElementById('productImage13').src = 'img/products/misc/pomp/bluepom.png';
+        }
+        if (color.name === 'Purple') {
+            document.getElementById('productImage13').src = 'img/products/misc/pomp/purplepom.png';
         }
     }
 
