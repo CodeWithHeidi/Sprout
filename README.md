@@ -2,14 +2,10 @@ https://codewithheidi.github.io/Sprout/ Sprout
 
 (tentative) to do list 
 
-- animated pandas in the footer?
-
-- add questions on the FAQs page 
+- fix the footer in some way
 
 - make product images
 
-- cart page 😰
+- cart 😰
 
-- shift products (optional)
-
-- fa cart-plus icon not working on product 2a
+- background color on all pages
