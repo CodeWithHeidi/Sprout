@@ -6,4 +6,4 @@ WE ARE ALMOST DONE RAAAAAAAAAAAAAAAAAAAAAAAAAAH
 
 - cart 😰
 
-- background color on all pages
+- comments
