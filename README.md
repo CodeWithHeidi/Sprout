@@ -5,7 +5,6 @@ https://codewithheidi.github.io/Sprout/ Sprout
 - animated pandas
     - footer
     - order button
-    - faq contact link
 
 - cart page 😰 (heidi)
   
