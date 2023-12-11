@@ -7,12 +7,6 @@ https://codewithheidi.github.io/Sprout/ Sprout
     - order button
     - faq contact link
 
-- add questions on the FAQs page 
-
-- color dropdown menu on product offer
-
-- make product images
-
-- cart page 😰
-
-- shift products (optional)
+- cart page 😰 (heidi)
+  
+- check all buttons, links, responsiveness (becca)
