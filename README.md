@@ -2,10 +2,8 @@ https://codewithheidi.github.io/Sprout/ Sprout
 
 (tentative) to do list 
 
-- animated pandas
-    - footer
-    - order button
+WE ARE ALMOST DONE RAAAAAAAAAAAAAAAAAAAAAAAAAAH
 
-- cart page 😰
-  
-- check all buttons, links, responsiveness
+- cart 😰
+
+- comments
