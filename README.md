@@ -1,9 +1,11 @@
 https://codewithheidi.github.io/Sprout/ Sprout
 
-(tentative) to do list 
+(tentative) to do list
 
-WE ARE ALMOST DONE RAAAAAAAAAAAAAAAAAAAAAAAAAAH
+animated pandas
 
-- cart 😰
+footer
+order button
+cart page 😰
 
-- comments
+check all buttons, links, responsiveness
