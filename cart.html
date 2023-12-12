@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sprout</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/base/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@200;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a href="index.html" class="navbar-brand">
+                    <h2 class="text-white">Sprout</h2>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="reviews.html" class="nav-item nav-link">Reviews</a>
+                        <a href="order.html" class="nav-item nav-link">Shop</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="faq.html" class="nav-item nav-link active">FAQs</a>
+                    </div>
+                    <a href="order.html" class="btn btn-dark py-2 px-4 d-none d-lg-inline-block">Order Now</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary hero-header mb-5">
+        <div class="container text-center">
+            <h1 class="display-4 text-white mb-3 animated slideInDown">Your Shopping Cart</h1>
+        </div>
+    </div>
+    <!-- Hero End -->
+<!-- Shopping Cart Section -->
+    <div class="container-fluid py-5">
+        <div class="container">
+
+            <div id="cartItems" class="row g-4">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div class="text-center">
+                <button onclick="checkout()" class="btn btn-primary">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <!-- Cart Page End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary py-5 my-5 footer" style="background-image:url(../img/base/bg.png)">
+        <div class="container ">
+            <div class="row g-8">
+                <div class="col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html"><img src="img/base/fullogo.png" class="img-fluid" alt="Logo"></a>
+                </div>
+
+                <div class="col-lg-1"></div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="mb-4">Get In Touch</h5>
+                    <p class="text-dark"><i class="fa fa-map-marker-alt me-3 text-dark"></i>Worldwide</p>
+                    <p class="text-dark"><i class="fa fa-phone-alt me-3 text-dark"></i>+888-PANDA-POD</p>
+                    <p class="text-dark"><i class="fa fa-envelope me-3 text-dark"></i>cs@sprout.com</p>
+
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-dark me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-dark me-1" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-dark me-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-dark me-1" href=""><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="mb-4">Links</h5>
+                    <a class="btn btn-link d-block text-dark" href="index.html">Home</a>
+                    <a class="btn btn-link d-block text-dark" href="reviews.html">Reviews & Success Stories</a>
+                    <a class="btn btn-link d-block text-dark" href="order.html">Our Shop</a>
+                    <a class="btn btn-link d-block text-dark" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link d-block text-dark" href="faq.html">FAQs</a>
+                </div>
+                <div class="col-lg-2 wow fadeIn g-11" data-wow-delay="0.1s">
+                    <img src="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!--  Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Sample cart items
+        const cartItems = [];
+    
+        // add an item to the cart
+        function addToCart(productName, price, color) {
+            const item = {
+                productName: productName,
+                price: price,
+                color: color,
+            };
+            cartItems.push(item);
+            updateCart();
+        }
+    
+        // update the cart display
+        function updateCart() {
+            const cartContainer = document.getElementById('cartItems');
+            cartContainer.innerHTML = '';
+    
+            cartItems.forEach(item => {
+                const cartItemDiv = document.createElement('div');
+                cartItemDiv.classList.add('col-md-6', 'col-lg-3', 'wow', 'fadeIn', 'data-wow-delay="0.1s"');
+    
+                const cartItemCard = document.createElement('div');
+                cartItemCard.classList.add('product-item', 'text-center', 'border', 'h-100', 'p-4');
+    
+                cartItemCard.innerHTML = `
+                    <h5 class="text-primary mb-3">${item.productName}</h5>
+                    <p>Color: ${item.color}</p>
+                    <p>Price: $${item.price.toFixed(2)}</p>
+                `;
+    
+                cartItemDiv.appendChild(cartItemCard);
+                cartContainer.appendChild(cartItemDiv);
+            });
+        }
+    
+        // checkout
+        function checkout() {
+            alert('Thank you for your purchase!');
+           
+        }
+    </script>
+</body>
+
+</html>

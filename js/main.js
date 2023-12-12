@@ -131,3 +131,56 @@ $(document).ready(function() {
         likeCountElement.text(updatedLikeCount );
     });
 });
+setTimeout(function () {
+    document.querySelector('.panda').classList.add('animate-panda');
+}, 1000);
+const cart = [];
+
+function addToCart(productID, color, imageSrc) {
+    const existingProduct = cart.find(item => item.productID === productID && item.color === color);
+
+    if (existingProduct) {
+        existingProduct.quantity += 1;
+    } else {
+        cart.push({ productID, color, quantity: 1, imageSrc });
+    }
+
+    updateCartDisplay();
+}
+
+function removeFromCart(productID, color) {
+    const index = cart.findIndex(item => item.productID === productID && item.color === color);
+
+    if (index !== -1) {
+        cart.splice(index, 1);
+    }
+
+    updateCartDisplay();
+}
+
+function updateCartDisplay() {
+    const cartItemsContainer = document.getElementById('cartItems');
+    cartItemsContainer.innerHTML = '';
+
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+    } else {
+        cart.forEach(item => {
+            const cartItemElement = document.createElement('div');
+            cartItemElement.innerHTML = `
+                <img src="${item.imageSrc}" alt="${item.color}" style="width: 50px; height: 50px;">
+                <p>Product ID: ${item.productID}, Color: ${item.color}, Quantity: ${item.quantity}</p>
+                <button onclick="removeFromCart('${item.productID}', '${item.color}')">Remove</button>
+            `;
+            cartItemsContainer.appendChild(cartItemElement);
+        });
+    }
+}
+
+// Example: Adding items to the cart (you can call these functions based on user actions)
+addToCart('product1', 'Black', 'img/products/straight/blackstraight.png');
+addToCart('product2', 'Blonde', 'img/products/straight/blondestraight.png');
+addToCart('product1', 'Brown', 'img/products/straight/brownstraight.png'); // Updating quantity for an existing product
+
+// Update the cart display initially
+updateCartDisplay();
