@@ -6,6 +6,6 @@ https://codewithheidi.github.io/Sprout/ Sprout
     - footer
     - order button
 
-- cart page 😰 (heidi)
+- cart page 😰
   
-- check all buttons, links, responsiveness (becca)
+- check all buttons, links, responsiveness
