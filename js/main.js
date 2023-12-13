@@ -142,7 +142,7 @@ function addToCart(productID, color, imageSrc) {
     if (existingProduct) {
         existingProduct.quantity += 1;
     } else {
-        cart.push({ productID, color, quantity: 1, imageSrc });
+        cart.push({productID, color, quantity: 1, imageSrc });
     }
 
     updateCartDisplay();
@@ -176,11 +176,8 @@ function updateCartDisplay() {
         });
     }
 }
-
-// Example: Adding items to the cart (you can call these functions based on user actions)
 addToCart('product1', 'Black', 'img/products/straight/blackstraight.png');
 addToCart('product2', 'Blonde', 'img/products/straight/blondestraight.png');
-addToCart('product1', 'Brown', 'img/products/straight/brownstraight.png'); // Updating quantity for an existing product
+addToCart('product1', 'Brown', 'img/products/straight/brownstraight.png'); 
 
-// Update the cart display initially
 updateCartDisplay();
