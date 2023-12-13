@@ -426,7 +426,7 @@ colorLink.addEventListener('click', function () {
             document.getElementById('productImage12').src = "img/products/misc/mullet/orange.png";
         }
         if (color.name === 'Green') {
-            document.getElementById('productImage12').src = "img/products/misc/mullet/green.png";
+            document.getElementById('productImage12').src = "img/products/misc/mullet/GREEN.png";
         }
         if (color.name === 'Blue') {
             document.getElementById('productImage12').src = "img/products/misc/mullet/blue.png";
